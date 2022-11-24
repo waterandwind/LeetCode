@@ -16,11 +16,12 @@ package com.company.leetcode;
 //所以可以从任意字符串本身长度作为前缀开始跟其他字符串笔记，如果匹配不到，则可以缩短最后字母，重新遍历匹配。直到成为空串，即不存在公共前缀为止。
 public class CommonFix {
     public static void main(String[] args) {
-        System.out.println(  longestCommonPrefix());
+        String[] strs={"flower","flow","flight"};
+        System.out.println(  longestCommonPrefix(strs));
 
     }
-    public static String longestCommonPrefix() {
-       String[] strs={"flower","flow","flight"};
+    public static String longestCommonPrefix(String[] strs) {
+
        //取任意字符串为开始比较的前缀
         String result=strs[0];
         while (result.length()>=0){
